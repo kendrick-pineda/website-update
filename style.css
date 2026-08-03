@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Helvetica,;
+    background:#5e5d5b50;
+}
+
+/* Header */
+header{
+    background:#b4a99935;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+}
+
+/* Search Bar */
+.search-bar{
+    width:60%;
+    max-width:700px;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    font-size:16px;
+    outline:none;
+}
+
+.container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:40px;
+}
+
+
+.left{
+    width:40%;
+    background:rgba(255, 255, 255, 0.316);
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+.left h1{
+    color:#040c1f;
+    margin-bottom:20px;
+}
+
+.left h2{
+    margin-top:25px;
+    color:#444;
+}
+
+.left p{
+    margin-top:15px;
+    line-height:1.7;
+}
+
+.left ul{
+    margin-top:15px;
+    margin-left:20px;
+}
+
+.left li{
+    margin-bottom:8px;
+}
+
+.right{
+    width:28%;
+    text-align:center;
+}
+
+.profile-pic{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #1f3c88;
+    margin-bottom:20px;
+}
+
+.contact{
+    background:rgba(255, 255, 255, 0.36);
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+.contact h2{
+    color:#040e28;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin-bottom:18px;
+    line-height:1.6;
+}
+
+@media (max-width:900px){
+
+.container{
+    flex-direction:column;
+}
+
+.left,
+.right{
+    width:100%;
+}
+
+.right{
+    margin-top:30px;
+}
+
+search-bar{
+    width:100%;
+    margin-bottom:20px;
+}
+
+.github-btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:12px 20px;
+    background:#24292e;
+    color:rgb(246, 228, 228);
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.github-btn:hover{
+    background:#50a7e0;
+    transform:scale(1.05);
+}
+
+hr{
+    margin:25px 0;
+    border:none;
+    border-top:2px solid #ddd;
+}
+}
